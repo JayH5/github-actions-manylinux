@@ -16,5 +16,7 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: ${{ matrix.python_version }}
+    - name: Install cryptography
+      run: pip install cryptography
     - name: Install pandas
       run: pip install 'pandas==0.24.2'
